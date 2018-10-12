@@ -135,7 +135,7 @@ Flags:
                                  Object store configuration in YAML.
       --query=<query> ...        Addresses of statically configured query API
                                  servers (repeatable).
-      --store.file-sd-config=<path> ...  
+      --query.file-sd-config=<path> ...  
                                  Path to file that contain addresses of query
                                  peers. The path can be a glob pattern
                                  (repeatable).

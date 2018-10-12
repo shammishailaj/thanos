@@ -81,7 +81,7 @@ func registerRule(m map[string]setupFunc, app *kingpin.Application, name string)
 	queries := cmd.Flag("query", "Addresses of statically configured query API servers (repeatable).").
 		PlaceHolder("<query>").Strings()
 
-	filesToWatch := cmd.Flag("store.file-sd-config", "Path to file that contain addresses of query peers. The path can be a glob pattern (repeatable).").
+	filesToWatch := cmd.Flag("query.file-sd-config", "Path to file that contain addresses of query peers. The path can be a glob pattern (repeatable).").
 		PlaceHolder("<path>").Strings()
 
 	m[name] = func(g *run.Group, logger log.Logger, reg *prometheus.Registry, tracer opentracing.Tracer, _ bool) error {
